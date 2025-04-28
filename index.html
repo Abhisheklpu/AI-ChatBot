@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Insights Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="student-info">
+            <div class="info-item">
+                <span class="info-label">Name:</span>
+                <span class="info-value">Abhishek Sharma</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Registration No:</span>
+                <span class="info-value">12304386</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Roll No:</span>
+                <span class="info-value">17</span>
+            </div>
+        </div>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1><i class="fas fa-chart-line"></i> Stock Market Insights Bot</h1>
+                <p>Get real-time stock data, market trends, and financial insights</p>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be added here -->
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="userInput" placeholder="Ask about stocks, market trends, or company information...">
+                <button id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+                <button id="voiceInput"><i class="fas fa-microphone"></i></button>
+                <button id="exportPDF"><i class="fas fa-file-pdf"></i> Export Chat</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
